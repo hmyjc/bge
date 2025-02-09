@@ -1,0 +1,20 @@
+EXP_NAME :  "fine-tuning-bge-version2"
+DATA_PATH :  "../competitions_data"
+MODEL_NAME : "BAAI/bge-large-en-v1.5"
+LLM_MODEL: "Meta-Llama-3.1-8B-Instruct-AWQ-INT4"
+COMPETITION_NAME :  "eedi-mining-misconceptions-in-mathematics"
+OUTPUT_PATH :  "../model_output"
+MODEL_OUTPUT_PATH :  "../model_output/trained_model"
+DATA_OUTPUT_PATH : '../competitions_data'
+RETRIEVE_NUM :  25
+WEIGHT_DECAY: 0.01
+WARMUP_RATIO: 0.1
+
+EPOCH : 4
+LR :  2e-05
+BS :  16
+GRAD_ACC_STEP :  8
+
+TRAINING :  True
+DEBUG :  False
+WANDB :  True
